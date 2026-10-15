@@ -1,0 +1,17 @@
+**/.tools/
+**/target/
+**/node_modules/
+**/dist/
+**/data/
+**/.idea/
+**/*.iml
+.verification/
+*.zip
+*.log
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.key
+Thumbs.db
+.DS_Store

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Лабораторная № 6: настройка Node.js, npm и Vite." />
+    <title>Full Stack Lab · Frontend</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar"><a class="brand" href="#"><span class="brand-icon">F</span><span id="app-title">Full Stack Lab</span></a><span class="course">DEVELOPMENT / 06</span></header>
+      <main>
+        <section class="intro"><div><p class="eyebrow">ЛАБОРАТОРНАЯ РАБОТА № 6</p><h1>Frontend.<br><span>Начало работы.</span></h1><p class="lead">Окружение настроено. Проверь JavaScript, познакомься с инструментами и подключи свой первый API.</p></div><div class="ready"><span class="dot"></span> Приложение загружено<span id="mode" class="mode"></span></div></section>
+        <section class="tools" aria-label="Инструменты разработки">
+          <article><span class="step">01 / RUNTIME</span><h2>Node.js</h2><p>Запускает JavaScript-инструменты вне браузера.</p><code>node --version</code></article>
+          <article><span class="step">02 / PACKAGES</span><h2>npm</h2><p>Устанавливает зависимости и запускает команды проекта.</p><code>npm ci</code></article>
+          <article><span class="step">03 / DEV SERVER</span><h2>Vite<span class="lightning">↗</span></h2><p>Сервер разработки, обновление модулей и сборка приложения.</p><code>npm run dev</code></article>
+        </section>
+        <section class="workspace">
+          <article class="panel playground"><p class="eyebrow">01 / ПРОВЕРКА JAVASCRIPT</p><h2>Всё начинается с клика</h2><p>Кнопки меняют состояние страницы без перезагрузки. Счётчик сбрасывается при обновлении вкладки.</p><div class="counter-row"><output id="counter" aria-live="polite">0</output><div><button id="increment" type="button">Добавить +1</button><button id="reset" type="button" class="secondary">Сбросить</button></div></div><div class="note">Для проверки HMR измени текст в <code>src/main.js</code> или цвет в <code>src/style.css</code> и сохрани файл.</div><p id="hmr-example" class="hmr"></p></article>
+          <article class="panel api-panel"><div class="panel-heading"><div><p class="eyebrow">02 / ПОДКЛЮЧЕНИЕ BACKEND</p><h2>Клиенты из базы</h2></div><span class="tag">GET /api/customers</span></div><p>Запусти лабораторную № 3 на порту 8083 и загрузи данные. Запрос проходит через proxy Vite.</p><button id="load" type="button" class="secondary">Загрузить клиентов ↗</button><p id="api-status" role="status">Запрос ещё не отправлен.</p><div class="table-wrap"><table><thead><tr><th>ID</th><th>Имя</th><th>Фамилия</th></tr></thead><tbody id="customers"></tbody></table></div></article>
+        </section>
+        <section class="build-note"><span class="build-icon">⌘</span><div><h2>От разработки к сборке</h2><p><code>npm run build</code> создаёт папку <code>dist</code>. Команда <code>npm run preview</code> позволяет проверить результат на порту 4173.</p></div></section>
+      </main><footer><span>FULL STACK DEVELOPMENT</span><span>Node.js + npm + Vite · Vanilla JavaScript</span></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
